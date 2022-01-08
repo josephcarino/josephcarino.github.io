@@ -1,0 +1,98 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif
+}
+
+.w3-row-padding img {
+    margin-bottom: 12px
+}
+
+
+/* Set the width of the sidebar to 120px */
+
+.w3-sidebar {
+    width: 120px;
+    background: #222;
+}
+
+
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+
+#main {
+    margin-left: 120px
+}
+
+
+/* Remove margins from "page content" on small screens */
+
+@media only screen and (max-width: 600px) {
+    #main {
+        margin-left: 0
+    }
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.collapsible:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f078";
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\f077";
+}
+
+.collapsible-content {
+    display: none;
+}
+
+.resume-frame {
+    border: 1px solid black;
+    width: 826px;
+    height: 1066px;
+    box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.32);
+}
+
+.link-to-resume {
+    background-color: #777;
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+
+.link-to-resume:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f35d";
+    font-weight: 900;
+    float: right;
+}
+
+.link-to-resume:hover {
+    background-color: #555;
+}

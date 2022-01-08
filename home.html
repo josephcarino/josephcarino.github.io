@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Joseph Carino</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b4531ba183.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fas fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fas fa-user w3-xxlarge"></i>
+            <p>ABOUT</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fas fa-envelope w3-xxlarge"></i>
+            <p>CONTACT</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w3-jumbo">Joseph Carino</h1>
+            <p>Software Developer and Leader</p>
+            <img src="MeSuit.jpg" alt="Me" class="w3-image" width="992" height="1108">
+        </header>
+
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-light-grey">About Me</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <p>From a young age, I've always been interested in computers. After receiving a Co-Op degree in Computer Science from the University of Waterloo in 2012, I've worked tirelessly to hone my skills as a developer.
+                <br><br>While I have experience in Scheme, Python, Java, Javascript, Typescript, VB, and C#, I'm currently primarily focused on the .NET ecosystem, and am a huge fan of C#. I'm a backend developer at heart, and like to focus on optimiziation,
+                performance diagnostics, and unit testing.
+                <br><br>I've been in a leadership role at my current employer since late 2019, and I find that I am an effective mentor, delegator, planner, and organizer. I am steady under pressure and a focused, hard worker, but I do not micromanage.
+                <br><br>I have experience in Scrum and Kanban agile methodologies, and can effectively lead a team under those frameworks. I am a clear communicator and am comfortable leading meetings and directing projects.
+                <br><br>In my spare time I enjoy movies, board and video games, and serving at the beck and call of my cat, Leia.
+            </p>
+
+            <div class="w3-hide-small">
+                <button id="toggle-resume-button" class="collapsible">Resume</button>
+                <iframe title="Joseph Carino's Resume" id="resume-frame" class="collapsible-content resume-frame" src="https://docs.google.com/document/d/e/2PACX-1vTdpk88eUvdvNf3_C7u1CRtMIpTVy2zKEo7GdagVq6oiyv7T2a2zltfF28YoOa7RKBXOdfQjAfqFw5-/pub?embedded=true"></iframe>
+            </div>
+
+            <div class="w3-hide-medium w3-hide-large">
+                <a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vTdpk88eUvdvNf3_C7u1CRtMIpTVy2zKEo7GdagVq6oiyv7T2a2zltfF28YoOa7RKBXOdfQjAfqFw5-/pub" id="link-to-resume" class="link-to-resume"> View Resume in Google Docs</a>
+            </div>
+            <br>
+            <hr style="width:200px" class="w3-opacity">
+            <img src="MeWarhol.jpg" alt="Me at the Andy Warhol Exhibit in Toronto 2021" class="w3-image" width="992" height="1108">
+            <!-- End About Section -->
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+            <h2 class="w3-text-light-grey">Contact Me</h2>
+            <hr style="width:200px" class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fas fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Oakville, Ontario, Canada</p>
+                <p><i class="fas fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <a href="tel:+1-905-465-5960">(905) 465-5960</a></p>
+                <p><i class="fas fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> <a href="mailto:contact@josephcarino.ca" target="_blank">contact@josephcarino.ca</a></p>
+            </div><br>
+            <!-- End Contact Section -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <a href="https://github.com/josephcarino" class="fab fa-github w3-hover-opacity"></a>
+            <a href="https://www.linkedin.com/in/joseph-carino-b7703817/" class="fab fa-linkedin w3-hover-opacity"></a>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+</body>
+<script type="text/javascript">
+    function hideToggle(elem) {
+        $(elem).slideToggle();
+    }
+
+    $("#toggle-resume-button").click(function() {
+        hideToggle("#resume-frame");
+        $(this).toggleClass("active");
+    });
+</script>
+
+</html>
