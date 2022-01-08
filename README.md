@@ -1,5 +1,5 @@
 ### Hi there 👋
-### 🌐 Check me out at [josephcarino.ca](www.josephcarino.ca)
+### 🌐 Check me out at [josephcarino.ca](http://www.josephcarino.ca)
 ### 📫 Reach me at contact@josephcarino.ca
 <!--
 **josephcarino/josephcarino** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
